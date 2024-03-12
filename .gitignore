@@ -1,0 +1,10 @@
+.venv/
+tmp/
+assets/
+tmp/
+data/
+
+
+
+.DS_Store
+.vscode/

@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PADIM: Test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--data_path",
+                "./data/cable/test/bent_wire",
+                "--model_path",
+                "./tmp",
+                "--UUID",
+                "PADIMModule_1234",
+                "--test"
+            ]
+        },
+        {
+            "name": "PADIM: Train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--data_path",
+                "./data/cable/train/good",
+                "--model_path",
+                "./tmp",
+                "--UUID",
+                "PADIMModule_1234",
+                "--train",
+            ]
+        }
+    ]
+}
